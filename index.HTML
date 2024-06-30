@@ -3,41 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #4CAF50; color: white; padding: 1em 0; text-align: center; }
-        section { padding: 2em; }
-        footer { background: #333; color: white; text-align: center; padding: 1em 0; position: fixed; width: 100%; bottom: 0; }
-        nav a { margin: 0 1em; color: white; text-decoration: none; }
-        .content { max-width: 800px; margin: auto; }
-    </style>
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Stock Price Prediction</h1>
+        <p>Developed by Neil Sagar and Dhruv Phooli</p>
     </header>
-    <div class="content">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Your brief bio goes here.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Details about your projects go here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Your contact information goes here.</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+    <main>
+        <form id="stockForm">
+            <label for="ticker">Enter Stock Ticker:</label>
+            <input type="text" id="ticker" name="ticker" required>
+            <button type="submit">Predict Price</button>
+        </form>
+        <div id="predictionResult">
+            <h2>Predicted Price:</h2>
+            <p id="price"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
